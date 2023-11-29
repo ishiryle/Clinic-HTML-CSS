@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Portal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('assets/2bg.png'); /* Replace with your actual background image URL */
+            background-size: fill;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100vh;
+            /* Adjust the right margin as needed */
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 103.5%;
+            height: 100vh; /* Adjust the height of the gradient */
+            background: linear-gradient(0deg, rgba(72, 96, 183, 0.66) 8.79%, rgba(72, 96, 183, 0.00) 100%, rgba(72, 96, 183, 0.06) 100%);
+        }
+
+        .header {
+            background-color: #fff;
+            border-bottom: 1px solid #fff;
+            width: 100%;
+            z-index: 2;
+            position: absolute; /* Fixed positioning to stick to the top */
+            top: 0; /* Position at the top */
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 350px; /* Set the desired width of your login form */
+            height: 500px;
+            position: relative;
+            z-index: 1;
+            margin-top: 90px; /* Adjust the margin to give space for the fixed header */
+            margin-right: 50px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px; /* Adjust the bottom margin as needed */
+            text-align: left;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2D349A;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="assets/Logo copy.png" alt="logo">
+    </div> 
+    <div class="login-container">
+        <img src="assets/Logo.png" alt="login-logo" width="333" height="70">
+        <div class="logo-text">Clinic Portal</div>
+        <h2 style="text-align: left;">Sign in</h2>
+        <form>
+            <input type="text" placeholder="Enter Student ID" name="studentID" required>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>For more inquiries or concerns, please email 
+            ithelp@plm.edu.ph</p>
+    </div>
+</body>
+</html>
